@@ -72,8 +72,48 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="card"">
-                            <div class=" card-body">
+                                                    <div class=" card-body">
                             <canvas id="myChart" width="400" height="200"></canvas>
+                        </div>
+                        <div class="card-footer">
+                            <span class="px-1">
+                                NSE E
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(201, 203, 207)"
+                                    class="bi bi-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>
+                            </span>
+                            <span class="px-1">
+                                NSE D
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(153, 102, 255)"
+                                    class="bi bi-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>
+                            </span>
+                            <span class="px-1">
+                                NSE C
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(255, 205, 86)"
+                                    class="bi bi-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>
+                            </span>
+                        
+                            <span class="px-1">
+                                NSE B
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(75, 192, 192)"
+                                    class="bi bi-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>
+                            </span>
+                        
+                            <span class="px-1">
+                                NSE A
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(54, 162, 235)"
+                                    class="bi bi-square-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>
+                            </span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -116,10 +156,39 @@
             </div>
     </div>
     <script>
-        var incomeData = [0, 584.258678, 608.5126935, 633.0154724, 657.7721706, 682.788106, 708.0687652, 733.6198109, 759.4470894, 785.5566389, 811.9546976, 838.6477127, 865.6423502, 892.9455045, 920.5643093, 948.5061482, 976.7786676, 1005.389788, 1034.347718, 1063.660969, 1093.33837, 1123.38908, 1153.822613, 1184.648847, 1215.87805, 1247.520897, 1279.588492, 1312.092395, 1345.044642, 1378.457774, 1412.344867, 1446.719561, 1481.596092, 1516.989332, 1552.914821, 1589.388812, 1626.428314, 1664.051139, 1702.275954, 1741.122338, 1780.610841, 1820.763047, 1861.601648, 1903.150521, 1945.434811, 1988.48102, 2032.317113, 2076.972619, 2122.478756, 2168.868563, 2216.17704, 2264.441308, 2313.700785, 2363.99738, 2415.375704, 2467.883312, 2521.570965, 2576.492924, 2632.707282, 2690.276333, 2749.266984, 2809.751227, 2871.806664, 2935.517107, 3000.973256, 3068.273481, 3137.524707, 3208.843436, 3282.356928, 3358.204568, 3436.539455, 3517.530262, 3601.363425, 3688.245727, 3778.407371, 3872.105654, 3969.629399, 4071.304318, 4177.499579, 4288.635896, 4405.195598, 4527.735279, 4656.90187, 4793.453321, 4938.285543, 5092.46807, 5257.29204, 5434.335985, 5625.558014, 5833.428193, 6061.124213, 6312.830485, 6594.214157, 6913.220654, 7281.486628, 7717.052827, 8250.142771, 8937.415242, 9906.071386, 11562, 25000];
+        var incomeData = [
+            // NSE E
+            0, 584.258678, 608.5126935, 633.0154724, 657.7721706, 682.788106, 708.0687652, 733.6198109, 759.4470894, 785.5566389, 811.9546976, 838.6477127, 865.6423502, 892.9455045, 920.5643093, 948.5061482, 976.7786676, 1005.389788, 1034.347718, 1063.660969, 1093.33837, 1123.38908, 1153.822613, 1184.648847, 1215.87805, 1247.520897, 1279.588492, 1312.092395, 1345.044642, 1378.457774, 1412.344867, 1446.719561, 1481.596092, 1516.989332,
+            // NSE D
+            1552.914821, 1589.388812, 1626.428314, 1664.051139, 1702.275954, 1741.122338, 1780.610841, 1820.763047, 1861.601648, 1903.150521, 1945.434811, 1988.48102, 2032.317113, 2076.972619, 2122.478756, 2168.868563, 2216.17704, 2264.441308, 2313.700785, 2363.99738, 2415.375704, 2467.883312, 2521.570965, 2576.492924, 2632.707282, 2690.276333, 2749.266984,
+            // NSE C
+            2809.751227, 2871.806664, 2935.517107, 3000.973256, 3068.273481, 3137.524707, 3208.843436, 3282.356928, 3358.204568, 3436.539455, 3517.530262, 3601.363425, 3688.245727, 3778.407371, 3872.105654, 3969.629399, 4071.304318, 4177.499579, 4288.635896, 4405.195598, 4527.735279, 4656.90187, 4793.453321, 4938.285543, 5092.46807, 5257.29204, 5434.335985,
+            // NSE B
+            5625.558014, 5833.428193, 6061.124213, 6312.830485, 6594.214157, 6913.220654, 7281.486628, 7717.052827, 8250.142771, 8937.415242,
+            // NSE A
+            9906.071386, 11562, 25000];
         var incomeLabels = [
-                '0%', '1%', '2%', '3%', '4%', '5%', '6%', '7%', '8%', '9%', '10%', '11%', '12%', '13%', '14%', '15%', '16%', '17%', '18%', '19%', '20%', '21%', '22%', '23%', '24%', '25%', '26%', '27%', '28%', '29%', '30%', '31%', '32%', '33%', '34%', '35%', '36%', '37%', '38%', '39%', '40%', '41%', '42%', '43%', '44%', '45%', '46%', '47%', '48%', '49%', '50%', '51%', '52%', '53%', '54%', '55%', '56%', '57%', '58%', '59%', '60%', '61%', '62%', '63%', '64%', '65%', '66%', '67%', '68%', '69%', '70%', '71%', '72%', '73%', '74%', '75%', '76%', '77%', '78%', '79%', '80%', '81%', '82%', '83%', '84%', '85%', '86%', '87%', '88%', '89%', '90%', '91%', '92%', '93%', '94%', '95%', '96%', '97%', '98%', '99%', '99.7%'
+            // NSE E
+            '0%', '1%', '2%', '3%', '4%', '5%', '6%', '7%', '8%', '9%', '10%', '11%', '12%', '13%', '14%', '15%', '16%', '17%', '18%', '19%', '20%', '21%', '22%', '23%', '24%', '25%', '26%', '27%', '28%', '29%', '30%', '31%', '32%', '33%',
+            // NSE D
+            '34%', '35%', '36%', '37%', '38%', '39%', '40%', '41%', '42%', '43%', '44%', '45%', '46%', '47%', '48%', '49%', '50%', '51%', '52%', '53%', '54%', '55%', '56%', '57%', '58%', '59%', '60%',
+            // NSE C
+            '61%', '62%', '63%', '64%', '65%', '66%', '67%', '68%', '69%', '70%', '71%', '72%', '73%', '74%', '75%', '76%', '77%', '78%', '79%', '80%', '81%', '82%', '83%', '84%', '85%', '86%', '87%',
+            // NSE B
+            '88%', '89%', '90%', '91%', '92%', '93%', '94%', '95%', '96%', '97%',
+            // NSE A
+            '98%', '99%', '99.7%'
             ];
+            var color = {
+                red: 'rgb(255, 99, 132)',
+                orange: 'rgb(255, 159, 64)',
+                yellow: 'rgb(255, 205, 86)',
+                green: 'rgb(75, 192, 192)',
+                blue: 'rgb(54, 162, 235)',
+                purple: 'rgb(153, 102, 255)',
+                grey: 'rgb(201, 203, 207)'
+            };
+        var incomeDataColors = [color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.grey, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.purple, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.yellow, color.green, color.green, color.green, color.green, color.green, color.green, color.green, color.green, color.green, color.green, color.blue, color.blue, color.blue];
     </script>
 
     <script>
@@ -144,12 +213,14 @@
     <script>
         var ctx = document.getElementById('myChart');
         var myChart = new Chart(ctx, {
-            type: 'line',
+            type: 'bar',
             data: {
                 labels: incomeLabels,
-                datasets: [{
+                datasets: 
+                    [{
                     label: 'Ingreso Familiar mensual (S/.)',
                     data: incomeData,
+                    backgroundColor: incomeDataColors,
                     fill: false,
                     borderColor: 'rgb(153, 102, 255)',
                     tension: 0.1
