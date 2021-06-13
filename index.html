@@ -545,7 +545,9 @@
     <script>
       $('input[id="income"]').keyup(function () {
         var income = $(this).val();
-        if (!isNaN(income)) {
+        if (isNaN(income)) {
+            $("#income-pct").text("Por favor, ingresa un número");
+        } else {
           var label = incomeLabels[incomeData.length - 1];
           for (i = 0; i < incomeData.length; i++) {
             if (income < incomeData[i]) {
@@ -556,8 +558,6 @@
           $("#income-pct").text(
             `Tu ingreso familiar es mayor al ${label} de hogares peruanos`
           );
-        } else {
-          $("#income-pct").text("Por favor, ingresa un número");
         }
       });
     </script>
