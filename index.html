@@ -86,7 +86,9 @@
           href="/"
           class="d-flex align-items-center text-dark text-decoration-none"
         >
-          <span class="fs-4"><h2>platacomocancha.pe</h2></span>
+          <span class="fs-4">
+            <h2>platacomocancha.pe</h2>
+          </span>
         </a>
       </header>
 
@@ -563,11 +565,11 @@
     <script>
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
-        type: "bar",
         data: {
           labels: incomeLabels,
           datasets: [
             {
+              type: "bar",
               label: "Ingreso Familiar mensual (S/.)",
               data: incomeData,
               backgroundColor: incomeDataColors,
