@@ -548,15 +548,15 @@
         if (isNaN(income)) {
             $("#income-pct").text("Por favor, ingresa un número");
         } else {
-          var label = incomeLabels[incomeData.length - 1];
+          var percentageIncome = incomeLabels[incomeData.length - 1];
           for (i = 0; i < incomeData.length; i++) {
             if (income < incomeData[i]) {
-              label = incomeLabels[i - 1];
+              percentageIncome = incomeLabels[i - 1];
               break;
             }
           }
           $("#income-pct").text(
-            `Tu ingreso familiar es mayor al ${label} de hogares peruanos`
+            `Tu ingreso familiar es mayor al ${percentageIncome} de hogares peruanos`
           );
         }
       });
